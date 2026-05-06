@@ -93,9 +93,9 @@
             <!-- Stage 5: หน้าเบาะแส (ปรับปรุงใหม่) -->
             <div id="confirm-overlay-5" class="confirm-screen">
                 <h2>ยินดีด้วย! คุณผ่านบททดสอบ</h2>
-                <p>คลิกปุ่มด้านล่างเพื่อเข้าสู่เบาะแส</p>
+                <p>คลิกปุ่มด้านล่างเพื่อเข้าสู่เบาะแสใน CANVA</p>
                 <br>
-                <button class="btn-yes" style="width:80%; padding: 20px; font-size: 1.2rem;" onclick="finalSuccess()">ไปที่ Google Drive</button>
+                <button class="btn-yes" style="width:80%; padding: 20px; font-size: 1.2rem;" onclick="finalSuccess()">ไปที่ CANVA </button>
             </div>
 
             <!-- หน้าหลัก (Terms) -->
@@ -141,7 +141,7 @@
     let stage4ReachedCount = 0; 
     let pass = false;
 
-    const DRIVE_URL = "https://docs.google.com/document/d/1uLsk2ZPsZFig-cnHUHy34Caobvcg03WOVDk7bccvhBo/edit?usp=drive_link";
+    const CANVA_URL = "https://canva.link/2u90kyd6qmhkatf";
 
     agreeCheck.onchange = function() { acceptBtn.disabled = !this.checked; };
 
@@ -280,7 +280,7 @@
     }
 
     function finalSuccess() {
-        window.location.href = DRIVE_URL;
+        window.location.href = CANVA_URL;
     }
 
     function hideAllOverlays() {
